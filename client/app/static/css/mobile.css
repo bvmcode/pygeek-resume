@@ -1,5 +1,16 @@
 
   @media screen and (max-width: 350px) {
+    .my-img{
+        width:90% 
+    }
+      p {
+        font-size:70%;
+      }
+      h3 {
+          font-size:95%;
+      }
+    
+
     #nescss-header .container {
         margin-left: 10%;
     }
@@ -24,13 +35,14 @@
 
     .email{
         font-size:65%;
+        text-align: left;
     }
-
+    .email a{
+        float: none;
+    }
     .socials{
-        margin-left:10%;
-    }
-    .resume{
-        margin-top:1px;
+        text-align:center;
+        padding-bottom:25px;
     }
     .nes-logo{
         display: none  !important;
@@ -39,11 +51,22 @@
 
 
 @media screen and (min-width: 350px) and (max-width: 580px) {
+    p {
+        font-size:70%;
+      }
+      h3 {
+        font-size:95%;
+    }
+  #nescss {
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+  }
     #nescss-header .container {
         margin-left: 10%;
     }
     #nescss-header h1 {
-        font-size: 90%;
+        font-size: 100%;
         text-align: center;
     }
     #nescss-header p {
@@ -63,23 +86,29 @@
 
     .email{
         font-size:65%;
+        text-align: left;
+    }
+    .email a{
+        float: none;
+    }
+    .socials{
+        text-align:center;
+        padding-bottom:25px;
     }
 
-    .socials{
-        margin-left:10%;
-    }
-    .resume{
-        margin-top:1px;
-    }
 
   }
 
 
   @media screen and (min-width: 580px) and (max-width: 768px) {
-      
-    #nescss .container {
-        margin-left: 10%;
+    p {
+        font-size:70%;
+      }
+      h3 {
+        font-size:95%;
     }
+
+
     #nescss-header h1 {
         font-size: 100%;
         text-align: center;
@@ -93,20 +122,32 @@
     }
     .email{
         font-size:65%;
+        text-align: left;
     }
-    .resume{
-        margin-top:1px;
+    .email a{
+        float: none;
     }
-    
+    .socials{
+        padding-bottom:25px;
+    }
+
+        .socials{
+        margin-left:38%;
+        margin-bottom:10px;
+    }
   }
   
 
   
   @media screen and (min-width: 768px)  and (max-width: 1024px) {
-      
-    #nescss .container {
-        margin-left: 10%;
+    p {
+        font-size:70%;
+      }
+      h3 {
+        font-size:95%;
     }
+
+  
     #nescss-header h1 {
         font-size: 100%;
         text-align: center;
@@ -120,8 +161,13 @@
     }
     .email{
         font-size:65%;
+        text-align: left;
     }
-    .resume{
-        margin-top:1px;
+    .email a{
+        float: none;
     }
+    .socials{
+        padding-bottom:25px;
+    }
+
   }

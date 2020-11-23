@@ -1,8 +1,8 @@
+
 body {
   padding-bottom:50px;
-  padding:1%;
-}
 
+}
 
 
 /* Header */
@@ -44,19 +44,82 @@ text-decoration: none;
 .skill{
   font-size:80%
 }
-
-.resume{
-  margin-top:10px;
+.topic-title{
+  margin-top:30px;
 }
 
-.about-me img{
+.resume{
+  margin-top:30px;
+}
+
+.my-img{
+  border: solid 1px #5eeb34;
+  background-color: black;
+  padding-right:0;
+  margin-right:0;
+
+}
+.my-img img{
   display:block; 
-  border:solid 5px #03fc1c; 
   margin:0 auto; 
   max-width:100%;
 }
 
 .about-me-desc {
-
+  padding-left:0;
+  margin-left:0;
 }
+
+.work-section{
+  margin-top:20px;
+}
+
+.work-section img{
+  width:100%; 
+  height:auto; 
+  image-rendering: pixelated; 
+  image-rendering: -moz-crisp-edges;
+}
+
+.work-section li{
+  font-size: 80%;
+  padding-top:10px;
+}
+
+.skill-block{
+  margin-top:10px;
+}
+
+.education-block img{
+  width:100%; 
+  height:auto; 
+  image-rendering: pixelated; 
+  image-rendering: -moz-crisp-edges;
+}
+
+.education-block li{
+  font-size: 80%;
+}
+
+.education-block .row{
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.degree{
+  color:green;
+}
+
+.contact-block{
+
+  margin-bottom:50px;
+}
+
+.email a{
+  float:right;
+}
+
+
+
+
 
