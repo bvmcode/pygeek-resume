@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet"  href= "{{ url_for('static',filename='flexboxgrid-6.3.1/dist/flexboxgrid.min.css') }}">
+    <link rel= "stylesheet"  href= "{{ url_for('static',filename='css/font.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='nes/nes.min.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+    
+
+    <title>Document</title>
+
+ 
+</head>
+<body>
+
+
+
+
+ 
+        <header id="nescss-header" :class="{ sticky: scrollPos > 50 }">
+          <div class="container">
+            <div class="nav-brand">
+                <h1><i class="nes-logo brand-logo"></i>the python geek</h1>
+              <p>bvmcode@thepythongeek.com</p>
+            </div>
+  
+            <div class="social-buttons">
+              <div class="share">
+                <a href="https://twitter.com/share?text=NES.css%EF%BD%9CNES-style%20CSS%20Framework%20%40bc_rikko&url=https://nostalgic-css.github.io/NES.css/" target="_blank"><i class="nes-icon twitter"></i></a>
+                <a href="https://www.linkedin.com/shareArticle?url=https%3A//nostalgic-css.github.io/NES.css/&title=NES.css%EF%BD%9CNES-style%20CSS%20Framework" target="_blank"><i class="nes-icon linkedin"></i></a>
+                <a href="https://github.com/nostalgic-css/NES.css" target="_blank"><i class="nes-icon github"></i></a>
+              </div>
+            </div>
+          </div>
+        </header>
+    {% block page_content %}
+    
+    {% endblock %}
+
+
+</body>
+</html>
+
+
+
+

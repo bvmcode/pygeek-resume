@@ -1,0 +1,33 @@
+version: '3'
+services:
+    # postgres-data:
+    #     restart: always
+    #     image: postgres
+    #     environment:
+    #       POSTGRES_PASSWORD: 'postgres'
+    #       POSTGRES_USER: 'postgres'
+    #     volumes:
+    #        - ./postgres-data:/var/lib/postgresql/data
+    #     ports:
+    #       - 9957:5432
+    app:
+        build: ./client
+        restart: always
+        # depends_on:
+        #     - postgres-data
+        volumes:
+            - .:/usr/src/app
+        ports:
+            - 9998:5000
+        environment:
+            - FLASK_APP=./app/__init__.py
+            - FLASK_ENV=development
+            - APP_SETTINGS=app.config.DevelopmentConfig
+            - DATABASE_URL=postgresql://postgres:postgres@users-db:5432/users_dev
+            - DATABASE_TEST_URL=postgresql://postgres:postgres@users-db:5432/users_test
+        volumes:
+            - ./client:/app
+            - /etc/localtime:/etc/localtime:ro
+            - ./client/logs:/app/logs
+
+#sudo docker-compose -p tpe_warn_back logs -f

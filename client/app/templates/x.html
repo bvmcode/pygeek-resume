@@ -1,0 +1,96 @@
+  
+{% extends "base.html" %}
+
+{% block navbar %}
+<nav style='padding:20px; border-bottom:3px solid #ccc; margin-bottom:60px;'>
+<h2><div class="nes-icon nes-logo is-small"></div>The Python Geek</h2>
+</nav>
+{% endblock %}
+
+{% block page_content %}
+
+
+
+
+  <div id="resume">
+    <button type="button" class="collapsible"><span class="header-icon fas fa-user"></span>About Me</button>
+    <div class="content about">
+    <p>I work as a Senior Data Analyst & Developer. I have a passion for taking on challenging data projects and turning 
+      them into solutions that benefit the organization. I enjoy all challenges, from performing exploratory data analysis to 
+      creating applications and dashboards.
+    </p>
+    </div>
+
+
+    <button type="button" class="collapsible"><span class="header-icon fas fa-code-branch"></span>Skills</button>
+    <div class="content skills">
+      <div class="grid-container">
+        <div class="grid-item"><p><span class="fab fa-python"></span><span class="icon-text">python</span></p></div>
+        <div class="grid-item"><p><span class="fas fa-flask"></span><span class="icon-text">flask </span></p></div>
+        <div class="grid-item"><p><span class="fab fa-windows"></span><span class="icon-text">sql server</span></p></div>  
+        <div class="grid-item"><p><span class="fas fa-server"></span><span class="icon-text">hadoop</span></p></div>
+        <div class="grid-item"><p><span class="fab fa-react"></span><span class="icon-text">react</span></p></div>
+        <div class="grid-item"><p><span class="fab fa-docker"></span><span class="icon-text">docker</span></p></div>  
+        <div class="grid-item"><p><span class="fas fa-microscope"></span><span class="icon-text">sciPy</span></p></div>
+        <div class="grid-item"><p><span class="fas fa-database"></span><span class="icon-text">postgres</span></p></div>
+        <div class="grid-item"><p><span class="fas fa-cloud"></span><span class="icon-text">Azure</span></p></div>  
+      </div>
+    </div>
+    
+    
+    <button type="button" class="collapsible"><span class="header-icon fas fa-book"></span>Education</button>
+    <div class="content education">
+      <div class="grid-container">
+      <div class="grid-item"><img class="college-img" src="{{ url_for('static', filename='images/ou.png') }}"/>
+              <p>BS Meteorology</p>
+              <p>Minor Mathematics</p>
+      </div>
+
+      <div class="grid-item"><img class="college-img" src="{{ url_for('static', filename='images/uml.png') }}"/>
+          <p>BS Info Technology</p>
+          <p>Python,C,C++,JS...</p>
+      </div>
+      </div>
+
+    </div>
+    
+    
+    <button type="button" class="collapsible"><span class="header-icon fas fa-link"></span>Links</button>
+    <div class="content links">
+      <div class="grid-container">
+        <div class="grid-item"><p><a href="https://github.com/bvmcode"><span class="nes-icon linkedin is-medium"></span>LinkedIn</a></p></div>
+        <div class="grid-item"><p><a href="https://www.linkedin.com/in/martbar/"><span class="nes-icon github is-medium"></span>Github</a></p></div>
+      </div>
+    </div>
+    
+    
+    <button type="button" class="collapsible"><span class="header-icon fas fa-envelope"></span>Contact</button>
+    <div class="content contact">
+    <p>Have questions? You can email me at <a href = "mailto: bvmcode@thepythongeek.com">bvmcode@thepythongeek.com</a> </p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        //content.style.display = "none";
+        $(this.nextElementSibling).animate({display:'none', height: "toggle", padding:"toggle"},200,function(){})
+      } else {
+          $(this.nextElementSibling).animate({display:'block', height: "toggle", padding:"toggle"},200,function(){})
+      }
+    });
+  }
+  </script>
+
+
+{% endblock %}

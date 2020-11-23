@@ -1,0 +1,62 @@
+body {
+  padding-bottom:50px;
+  padding:1%;
+}
+
+
+
+/* Header */
+header {
+border-bottom: 4px solid #D3D3D3;
+background-color: white;
+}
+
+header > .container {
+display: flex;
+align-items: baseline;
+max-width: 980px;
+margin: 0 auto;
+padding-top: 1rem;
+transition: all 0.2s ease;
+}
+
+header > .container > .nav-brand {
+margin-right: auto;
+}
+header > .container > .social-button {
+margin-left: auto;
+}
+
+.nav-brand .brand-logo {
+margin-right: 1rem;
+}
+.nav-brand > a {
+color: #212529;
+text-decoration: none;
+}
+
+
+/* custom */
+
+.nes-progress {
+  height:25px;
+}
+.skill{
+  font-size:80%
+}
+
+.resume{
+  margin-top:10px;
+}
+
+.about-me img{
+  display:block; 
+  border:solid 5px #03fc1c; 
+  margin:0 auto; 
+  max-width:100%;
+}
+
+.about-me-desc {
+
+}
+

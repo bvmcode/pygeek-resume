@@ -1,0 +1,283 @@
+  
+{% extends "base.html" %}
+
+
+{% block page_content %}
+
+
+
+<div id="nescss" class="container resume">
+
+        <!-- ABOUT ME SECTION -->
+        <h3 class="topic-title">
+            <i class="nes-icon star"></i> about me
+        </h3>
+            <div class="row about-me">
+ 
+                <div class="col-sm-5 col-xs-12">
+                    <div style="margin:0 auto;">
+                        <img src="{{ url_for('static', filename='images/me.jpg') }}">
+                    </div>
+                </div>
+
+                <div class="col-sm-7 col-xs-12 about-me-desc">
+                    <div class="nes-container with-title is-dark">
+                        <h3 class='title'>who am I?</h3>
+                        <p>hi I'm barry martin</p>
+                        <p>data analyst and developer passionate about pipelining data and develolping analytical user interfaces</p>
+
+
+                        <p><i class="nes-icon is-small heart"></i> proud husband and dad</p>
+                        <p><i class="nes-icon is-small heart"></i> avid reader of blogs and oreilly books</p>
+                        <p><i class="nes-icon is-small heart"></i> sci-fi movie geek</p>
+                        <p><i class="nes-icon is-small heart"></i> football fanatic</p>
+                    </div>
+                </div>
+
+            </div>
+       
+
+
+ 
+            <h3 class="topic-title" style="margin-top:30px;">
+                <i class="nes-icon star"></i> most recent experience
+            </h3>
+            <div class="nes-container">
+                <div class="row" style="margin-top:20px;">
+                    <div class="col-xs-2">
+                        <img src="{{ url_for('static',filename='images/pc.jpg') }}" style="width:100%; height:auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;">
+                    </div>
+                    <div class="col-xs-10">
+                        <h3>CH Robinson</h3>
+                        <p style="color:green">senior data analyst 2007-present</p>
+                        <div>
+                            <p style="font-size: 80%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Repellendus quo illo sed adipisci nulla quae qui voluptatem, amet minima hic deserunt soluta, 
+                                fugit nihil sunt dolorem sapiente vel placeat ipsam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <h3 class="topic-title" style="margin-top:30px;">
+                <i class="nes-icon star"></i> skills
+            </h3>
+                <div class="nes-container with-title">
+                    <h3>coding</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-xs-12 skill">python[3]</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">javascript</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="80" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">R</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="60" max="100">
+                            </progress>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="nes-container with-title" style="margin-top:30px;">
+                    <h3>dev tools</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-xs-12 skill">docker</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">git</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">linux</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="85" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">airflow</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="75" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">azure</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="60" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">nifi</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="55" max="100">
+                            </progress>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nes-container with-title" style="margin-top:30px;">
+                    <h3>databases</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-xs-12 skill">sql server</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">postgresql</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="85" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">hadoop/hive</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="75" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">redis</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="60" max="100">
+                            </progress>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nes-container with-title" style="margin-top:30px;">
+                    <h3>web development</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-xs-12 skill">flask</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">react</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="85" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">plotly dash</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="80" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">django</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-warning" value="60" max="100">
+                            </progress>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="nes-container with-title" style="margin-top:30px;">
+                    <h3>analytical tools</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-xs-12 skill">scipy</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">power bi</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 skill">MS Excel</div>
+                        <div class="col-sm-8 col-xs-12">
+                            <progress class="nes-progress is-success" value="95" max="100">
+                            </progress>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            <h3 class="topic-title" style="margin-top:30px;">
+                <i class="nes-icon star"></i> Education
+            </h3>
+            <div class="nes-container" style="margin-top:20px;">
+                <div class="row" >
+                    <div class="col-xs-2">
+                        <img src="{{ url_for('static',filename='images/uml.png') }}" style="width:100%; height:auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;">
+                    </div>
+                    <div class="col-xs-10">
+                        <h3>UMass Lowell</h3>
+                        <p style="color:green">BS Information Technology</p>
+                        <div>
+                            <p style="font-size: 80%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Repellendus quo illo sed adipisci nulla quae qui voluptatem, amet minima hic deserunt soluta, 
+                                fugit nihil sunt dolorem sapiente vel placeat ipsam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-xs-2">
+                        <img src="{{ url_for('static',filename='images/ou.png') }}" style="width:100%; height:auto; image-rendering: pixelated; image-rendering: -moz-crisp-edges;">
+                    </div>
+                    <div class="col-xs-10">
+                        <h3>Univ. of Oklahoma</h3>
+                        <p style="color:green">BS Atmospheric Science</p>
+                        <div>
+                            <p style="font-size: 80%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Repellendus quo illo sed adipisci nulla quae qui voluptatem, amet minima hic deserunt soluta, 
+                                fugit nihil sunt dolorem sapiente vel placeat ipsam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="nes-container with-title" style="margin-top:50px; margin-bottom:50px;">
+                    <h3 class="title">social media</h3>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12 socials">
+                            <a href="#"> <i class="nes-icon linkedin"></i> </a>
+                            <a href="#"> <i class="nes-icon github"></i> </a>
+                            <a href="#"> <i class="nes-icon medium"></i> </a>
+                        </div>
+
+                        
+                        <div class="col-sm-8 col-xs-12 email">
+                            <a href="#" style="float:right;"> <i class="fas fa-envelope-open"></i> bvmcode@thepythongeek.com</a>
+                        </div>
+                    </div>
+                </div> 
+    </div>
+
+
+
+{% endblock %}

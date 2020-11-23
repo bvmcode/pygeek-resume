@@ -1,0 +1,127 @@
+
+  @media screen and (max-width: 350px) {
+    #nescss-header .container {
+        margin-left: 10%;
+    }
+    #nescss-header h1 {
+        font-size: 90%;
+        text-align: center;
+    }
+    #nescss-header p {
+        font-size:65%;
+        text-align: center;
+    }
+    .social-buttons{
+        display:none;
+    }
+    .about-me-desc{
+        padding-top:5%;
+    }
+
+    .topic-title{
+        font-size: 90%;
+    }
+
+    .email{
+        font-size:65%;
+    }
+
+    .socials{
+        margin-left:10%;
+    }
+    .resume{
+        margin-top:1px;
+    }
+    .nes-logo{
+        display: none  !important;
+    }
+  }
+
+
+@media screen and (min-width: 350px) and (max-width: 580px) {
+    #nescss-header .container {
+        margin-left: 10%;
+    }
+    #nescss-header h1 {
+        font-size: 90%;
+        text-align: center;
+    }
+    #nescss-header p {
+        font-size:65%;
+        text-align: center;
+    }
+    .social-buttons{
+        display:none;
+    }
+    .about-me-desc{
+        padding-top:5%;
+    }
+
+    .topic-title{
+        font-size: 90%;
+    }
+
+    .email{
+        font-size:65%;
+    }
+
+    .socials{
+        margin-left:10%;
+    }
+    .resume{
+        margin-top:1px;
+    }
+
+  }
+
+
+  @media screen and (min-width: 580px) and (max-width: 768px) {
+      
+    #nescss .container {
+        margin-left: 10%;
+    }
+    #nescss-header h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+    #nescss-header p {
+        font-size:85%;
+        text-align: center;
+    }
+    .topic-title{
+        font-size: 90%;
+    }
+    .email{
+        font-size:65%;
+    }
+    .resume{
+        margin-top:1px;
+    }
+    
+  }
+  
+
+  
+  @media screen and (min-width: 768px)  and (max-width: 1024px) {
+      
+    #nescss .container {
+        margin-left: 10%;
+    }
+    #nescss-header h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+    #nescss-header p {
+        font-size:85%;
+        text-align: center;
+    }
+    .topic-title{
+        font-size: 90%;
+    }
+    .email{
+        font-size:65%;
+    }
+    .resume{
+        margin-top:1px;
+    }
+  }
