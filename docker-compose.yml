@@ -23,7 +23,9 @@ services:
         build: ./nginx
         container_name: nginx
         restart: always
+        depends_on:
+            - app
         volumes:
-            - ./client/app/static:/usr/src/app/project/static
+            - ./client/app/static:/etc/nginx/app/project/static
         ports:
             - "80:80"
