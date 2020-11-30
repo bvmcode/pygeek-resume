@@ -27,5 +27,8 @@ services:
             - app
         volumes:
             - ./client/app/static:/etc/nginx/app/project/static
+            - ./nginx/ssl/pkey.key:/etc/nginx/pkey.key
+            - ./nginx/ssl/pkey.pem:/etc/nginx/pkey.pem
         ports:
             - "80:80"
+            - "443:443"
